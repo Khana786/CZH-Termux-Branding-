@@ -1,0 +1,31 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+REPO="$HOME/CZH-Termux-Branding-"
+TARGET="$HOME/CZH"
+
+printf '\033[1;34m⚡ CZH UPDATE SYSTEM ⚡\033[0m\n'
+printf '\033[1;32mCIPHER ZERO HACKERS\033[0m\n\n'
+
+if [ ! -d "$REPO/.git" ]; then
+    echo "❌ CZH repository not found."
+    echo "Run: czh-install"
+    exit 1
+fi
+
+echo "🔄 Checking official CZH branding updates..."
+
+git -C "$REPO" pull --ff-only || {
+    echo "❌ Update failed."
+    exit 1
+}
+
+cp "$REPO/banner.sh" "$TARGET/banner.sh"
+cp "$REPO/czh-config" "$TARGET/czh-config"
+chmod +x "$TARGET/banner.sh"
+
+echo
+echo "✅ CZH BRANDING UPDATED SUCCESSFULLY"
+echo "⚡ CZH HACKERS"
+echo "👑 AARHIV HACKERS"
+echo "🔐 CIPHER ZERO HACKERS"
+echo "🛡️ WHITE HAT / ETHICAL"

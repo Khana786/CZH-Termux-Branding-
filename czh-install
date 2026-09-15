@@ -1,0 +1,42 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+REPO_URL="https://github.com/Khana786/CZH-Termux-Branding-.git"
+REPO="$HOME/CZH-Termux-Branding-"
+TARGET="$HOME/CZH"
+
+printf '\033[1;34m⚡ CZH INSTALL SYSTEM ⚡\033[0m\n'
+printf '\033[1;32mCIPHER ZERO HACKERS\033[0m\n\n'
+
+echo "🔐 CZH White Hat setup starting..."
+
+if ! command -v git >/dev/null 2>&1; then
+    echo "❌ Git is not installed."
+    echo "Run: pkg install git -y"
+    exit 1
+fi
+
+if [ ! -d "$REPO/.git" ]; then
+    echo "📥 Downloading official CZH branding..."
+    git clone "$REPO_URL" "$REPO" || {
+        echo "❌ Could not clone CZH repository."
+        exit 1
+    }
+else
+    echo "🔄 CZH repository already exists."
+    git -C "$REPO" pull --ff-only || exit 1
+fi
+
+mkdir -p "$TARGET"
+
+cp "$REPO/banner.sh" "$TARGET/banner.sh"
+cp "$REPO/czh-config" "$TARGET/czh-config"
+
+chmod +x "$TARGET/banner.sh"
+
+printf '\n\033[1;32m✅ CZH INSTALLATION COMPLETE\033[0m\n'
+echo "⚡ CZH HACKERS"
+echo "👑 AARHIV HACKERS"
+echo "🔐 CIPHER ZERO HACKERS"
+echo "🛡️ WHITE HAT / ETHICAL"
+echo
+echo "Future updates: czh-update"

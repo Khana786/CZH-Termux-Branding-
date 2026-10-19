@@ -1,75 +1,72 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-B='\033[1;34m'
-G='\033[1;32m'
-R='\033[1;31m'
-C='\033[1;36m'
-W='\033[1;37m'
-Y='\033[1;33m'
-N='\033[0m'
+R='\033[91m'
+G='\033[92m'
+Y='\033[93m'
+B='\033[94m'
+C='\033[96m'
+W='\033[97m'
+D='\033[90m'
+BG_B='\033[44m'
+BG_C='\033[46m'
+BG_R='\033[41m'
+NC='\033[0m'
 
 clear
 
-# =========================================================
-#                 CZH CYBER COMMAND
-# =========================================================
+# --- TOP GRID BORDER ---
+echo -e "${B}╔══════════════════════════════════════════════════════╗${NC}"
 
-echo
-echo -e "${B}████████████████████████████████████████████████████████${N}"
-echo -e "${B}██${C}       ██████╗ ███████╗██╗  ██╗       ${B}██${N}"
-echo -e "${B}██${G}      ██╔════╝ ╚══███╔╝██║  ██║       ${B}██${N}"
-echo -e "${B}██${R}      ██║        ███╔╝ ███████║       ${B}██${N}"
-echo -e "${B}██${C}      ██║       ███╔╝  ██╔══██║       ${B}██${N}"
-echo -e "${B}██${G}      ╚██████╗  ███████╗██║  ██║       ${B}██${N}"
-echo -e "${B}██${R}       ╚═════╝  ╚══════╝╚═╝  ╚═╝       ${B}██${N}"
-echo -e "${B}████████████████████████████████████████████████████████${N}"
+# --- CZH LOGO (Centered & Spaced) ---
+echo -e "${C}"
+echo -e "        ██████╗███████╗██╗  ██╗"
+echo -e "       ██╔════╝╚══███╔╝██║  ██║"
+echo -e "       ██║       ███╔╝ ███████║"
+echo -e "       ██║      ███╔╝  ██╔══██║"
+echo -e "       ╚██████╗███████╗██║  ██║"
+echo -e "        ╚═════╝╚══════╝╚═╝  ╚═╝"
+echo -e "${NC}"
 
-echo
-echo -e "${R}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-echo -e "              ${W}⚡ CZH HACKERS ⚡${N}"
-echo -e "${R}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
+# --- MAIN TITLE BOX ---
+echo -e "${B}╠══════════════════════════════════════════════════════╣${NC}"
+echo -e "${BG_C}${W}║       ⚡ C I P H E R   Z E R O   H A C K E R S ⚡      ║${NC}"
+echo -e "${G}║                 A A R H I V   H A C K E R S          ║${NC}"
+echo -e "${B}╠══════════════════════════════════════════════════════╣${NC}"
+echo ""
 
-echo
-echo -e "              ${R}AARHIV HACKERS${N}"
-echo -e "           ${G}CIPHER ZERO HACKERS${N}"
+# --- POPUP 1: IDENTITY ---
+echo -e "${Y}  ┌───[ ⚠ SYSTEM ENVIRONMENT ]──────────────────────┐${NC}"
+echo -e "  ${W}│${NC} ${C}ORGANIZATION : ${G}CIPHER ZERO HACKERS${NC}               ${W}│${NC}"
+echo -e "  ${W}│${NC} ${C}FOUNDER      : ${G}AARHIV HACKERS${NC}                    ${W}│${NC}"
+echo -e "  ${W}│${NC} ${C}ENVIRONMENT  : ${Y}WHITE HAT CYBER LAB${NC}               ${W}│${NC}"
+echo -e "  ${W}│${NC} ${C}SYSTEM       : ${W}CZH CYBER ENVIRONMENT${NC}             ${W}│${NC}"
+echo -e "  ${W}│${NC} ${C}MODE         : ${W}WHITE HAT / ETHICAL${NC}               ${W}│${NC}"
+echo -e "  ${W}│${NC} ${C}VERSION      : ${W}3.0 // EST. 2027${NC}                  ${W}│${NC}"
+echo -e "${Y}  └──────────────────────────────────────────────────┘${NC}"
+echo ""
 
-echo
-echo -e "${B}┌──────────────────────────────────────────────────────┐${N}"
-echo -e "${B}│${W}                 WHITE HAT CYBER LAB                 ${B}│${N}"
-echo -e "${B}└──────────────────────────────────────────────────────┘${N}"
+# --- POPUP 2: STATUS DASHBOARD ---
+echo -e "${B}  ┌───[ 🟢 STATUS DASHBOARD ]────────────────────────┐${NC}"
+echo -e "  ${B}│${NC} ${G}● ONLINE${NC}      ${R}● ETHICAL${NC}     ${C}● SECURE${NC}        ${B}│${NC}"
+echo -e "  ${B}│${NC} ${B}● AUTHORIZED${NC}  ${G}● CZH LAB${NC}     ${R}● TERMUX${NC}        ${B}│${NC}"
+echo -e "  ${B}├──────────────────────────────────────────────────┤${NC}"
+echo -e "  ${B}│${NC} ${W}CORE     : ${G}[ ONLINE ]${NC}                           ${B}│${NC}"
+echo -e "  ${B}│${NC} ${W}SECURITY : ${G}[ ACTIVE ]${NC}                           ${B}│${NC}"
+echo -e "  ${B}│${NC} ${W}WHITE HAT: ${G}[ ENABLED ]${NC}                          ${B}│${NC}"
+echo -e "  ${B}│${NC} ${W}CYBER LAB: ${G}[ READY ]${NC}                            ${B}│${NC}"
+echo -e "${B}  └──────────────────────────────────────────────────┘${NC}"
+echo ""
 
-echo
-echo -e "   ${G}● ONLINE${N}        ${R}● ETHICAL${N}        ${C}● SECURE${N}"
-echo -e "   ${C}● AUTHORIZED${N}    ${G}● CZH LAB${N}       ${R}● TERMUX${N}"
+# --- POPUP 3: DANGER WARNING ---
+echo -e "${R}  ╔══════════════════════════════════════════════════╗${NC}"
+echo -e "${BG_R}${W}  ║  ☠  WARNING: UNAUTHORIZED ACCESS IS PROHIBITED   ║${NC}"
+echo -e "${BG_R}${W}  ║     ALL ACTIONS ARE MONITORED & RECORDED         ║${NC}"
+echo -e "${R}  ╚══════════════════════════════════════════════════╝${NC}"
+echo ""
 
-echo
-echo -e "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-echo -e " ${W}CZH CORE${N}       ${G}[ ONLINE ]${N}"
-echo -e " ${W}SECURITY${N}       ${C}[ ACTIVE ]${N}"
-echo -e " ${W}WHITE HAT${N}      ${R}[ ENABLED ]${N}"
-echo -e " ${W}CYBER LAB${N}      ${G}[ READY ]${N}"
-echo -e "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-
-echo
-echo -e " ${W}SYSTEM${N}    : ${G}CZH CYBER ENVIRONMENT${N}"
-echo -e " ${W}FOUNDER${N}   : ${R}AARHIV HACKERS${N}"
-echo -e " ${W}MODE${N}      : ${G}WHITE HAT / ETHICAL${N}"
-echo -e " ${W}VERSION${N}   : ${Y}${BRANDING_VERSION:-3.0}${N}"
-echo -e " ${W}EST.${N}      : ${R}${ESTABLISHED:-2027}${N}"
-
-echo
-echo -e "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-echo
-echo -e "          ${C}LEARN${N}  ${W}•${N}  ${G}SECURE${N}  ${W}•${N}  ${R}DEFEND${N}"
-echo
-echo -e "${B}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-
-echo
-echo -e "             ${G}>>> ACCESS GRANTED <<<${N}"
-echo -e "              ${W}CZH WHITE HAT MODE${N}"
-
-echo
-echo -e "${R}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-echo -e "           ${R}⚡ CIPHER ZERO HACKERS ⚡${N}"
-echo -e "${R}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${N}"
-echo
+# --- FOOTER ---
+echo -e "${G}                  >>> ACCESS GRANTED <<<${NC}"
+echo -e "${C}                LEARN  •  SECURE  •  DEFEND${NC}"
+echo -e "${D}          [ SESSION SECURED BY AARHIV HACKERS ]${NC}"
+echo -e "${B}╚══════════════════════════════════════════════════════╝${NC}"
+echo ""
